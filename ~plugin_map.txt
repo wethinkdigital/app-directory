@@ -1,0 +1,138 @@
+////////////////////////
+
+CORE CLASSES
+Used in template
+
+////////////////////////
+
+
+directory_coreclass.php
+
+	setAdminRoot
+	adminRoot
+	setVars
+	getVars
+	prepVars
+	getVarNames
+	getVals
+	addQuestion
+	getGroup
+	getQuestion
+	printQuestion
+	printGroup
+	printDetail
+	canAccess
+	makeFolder
+	fileUpload
+	formAfter - INCOMPLETE, WILL SIMPLIFY WHAT HAPPENS AFTER A FORM IS SUBMITTED
+	notify
+	sendEmail
+	encrypt
+	decrypt
+	sort2d
+	makeLink - prepends http:// to supplied url
+	recursive_array_search - INCOMPLETE??
+	taxArraySearch
+	
+	
+directory_itemclass.php
+
+	itemExists
+	getItemType
+	register_cpt
+	getTax - INCOMPLETE??
+	
+	
+directory_taxclass.php
+
+	addTaxonomy
+	addTerms
+	getTerms
+	taxTree - NOT RECURSIVE, ONLY GOES ONE LAYER DEEP
+	
+
+directory_userclass.php
+
+	register_role - registers user type based on 
+	exclude_role - Removes unwanted standard wordpress roles: editor, subscriber, etc.
+	getVals - Overrides coreclass method as different code to get user details
+	getUsers - returns users matching instance type that called method, plus other params. Adds user meta to returned object.
+	
+	
+	
+////////////////////////
+
+ACTIONS
+Form action functions submitted through AJAX or HTTP
+
+////////////////////////
+
+
+create_user.php
+
+	directory_create_user
+	
+	
+create
+
+	directory_create
+	
+	
+login
+
+	directory_login
+	
+	
+search
+
+	directory_search - SEARCHES ITEMS (POSTS)
+	
+	
+update_user
+
+	directory_update_user
+	
+	
+update
+
+	directory_update
+	
+	
+upload
+
+	directory_upload
+	
+	
+	
+////////////////////////
+
+OTHER FILES
+
+////////////////////////
+
+
+dev_functions
+
+	pre - Outputs array in HR format
+
+
+item_functions.php
+
+	time2str - Converts a time string eg. Mon 4th Jan 2015 to a time relative string eg. 4 days ago
+	
+	
+jsapi.php
+
+	jsapi - BASIC RESTFUL API. Handles getQuestion, time2str
+	
+	
+systemplate.php
+
+	register_systemplate - registers the Systemplate post type
+	
+	
+user_functions.php
+
+	getGroupUsers - Returns all users that belong to a parent user by id
+	SHOULD THIS BE IN USERCLASS?
+		

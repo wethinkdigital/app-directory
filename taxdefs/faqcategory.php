@@ -1,0 +1,44 @@
+<?php
+
+///////////////////////////////////////////
+//
+// Define taxonomy type
+// no spaces - letters, hyphen or underscore only
+//
+///////////////////////////////////////////
+	
+$type = 'faqcategory'; 
+
+
+///////////////////////////////////////////
+//
+// Define taxonomy labelling (WordPress admin)
+//
+///////////////////////////////////////////
+
+$label = 'faqcategories';
+$single_label ='faqcategory';
+
+
+///////////////////////////////////////////
+//
+// Which item types will this taxonomy apply to
+//
+///////////////////////////////////////////
+
+$items = array('faq');
+
+
+///////////////////////////////////////////
+//
+// Define terms to be registered when taxonomy is created
+//
+///////////////////////////////////////////
+
+$terms = array(
+		'For job hunters' => 'job-hunters',
+		'For recruiters' => 'recruiters',
+		'For annual subscribers' => 'annual-subscribers',
+);
+
+
